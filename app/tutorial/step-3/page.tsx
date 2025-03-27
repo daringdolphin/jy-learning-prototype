@@ -15,7 +15,7 @@ export default function Step3() {
   })
 
   const completeStep = (step: keyof typeof steps) => {
-    setSteps((prev) => ({ ...prev, [step]: true }))
+    setSteps((prev) => ({ ...prev, [step]: !prev[step] }))
   }
 
   const allStepsCompleted = Object.values(steps).every((step) => step)
@@ -39,7 +39,7 @@ export default function Step3() {
               onClick={() => completeStep("prForm")}
             >
               {steps.prForm ? <CheckCircle2 className="mr-2 h-4 w-4" /> : null}
-              Mark Complete
+              {steps.prForm ? "Mark Incomplete" : "Mark Complete"}
             </Button>
             <span className={steps.prForm ? "line-through text-slate-500" : ""}>
               1. Complete PR form
@@ -53,7 +53,7 @@ export default function Step3() {
               onClick={() => completeStep("printPR")}
             >
               {steps.printPR ? <CheckCircle2 className="mr-2 h-4 w-4" /> : null}
-              Mark Complete
+              {steps.printPR ? "Mark Incomplete" : "Mark Complete"}
             </Button>
             <span className={steps.printPR ? "line-through text-slate-500" : ""}>2. Save as PDF</span>
           </div>
@@ -65,7 +65,7 @@ export default function Step3() {
               onClick={() => completeStep("xodoUpload")}
             >
               {steps.xodoUpload ? <CheckCircle2 className="mr-2 h-4 w-4" /> : null}
-              Mark Complete
+              {steps.xodoUpload ? "Mark Incomplete" : "Mark Complete"}
             </Button>
             <span className={steps.xodoUpload ? "line-through text-slate-500" : ""}>
               3. Upload to Xodo
