@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, XCircle, Trophy } from "lucide-react"
+import { CheckCircle, XCircle, Trophy, ArrowLeft, ArrowRight } from "lucide-react"
 
 type Question = {
   id: number
@@ -118,6 +118,8 @@ export default function Quiz() {
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
+      setHasAnswered(selectedAnswers[currentQuestion + 1] !== -1)
+      setIsCorrect(selectedAnswers[currentQuestion + 1] === questions[currentQuestion + 1].correctAnswer)
     } else {
       setShowResults(true)
     }
@@ -126,6 +128,8 @@ export default function Quiz() {
   const handlePreviousQuestion = () => {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1)
+      setHasAnswered(selectedAnswers[currentQuestion - 1] !== -1)
+      setIsCorrect(selectedAnswers[currentQuestion - 1] === questions[currentQuestion - 1].correctAnswer)
     }
   }
 
@@ -341,17 +345,31 @@ export default function Quiz() {
             </div>
           )}
         </CardContent>
-        <CardFooter className="flex justify-between">
-          <div>
-            <Button variant="outline" onClick={() => handlePreviousQuestion()} disabled={currentQuestion === 0}>
-              Previous
-            </Button>
-          </div>
-          <div className="flex space-x-2">
+        <CardFooter className="flex justify-end gap-2">
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => handlePreviousQuestion()}
+            disabled={currentQuestion === 0}
+            className="rounded-full w-8 h-8 border"
+          >
+            <ArrowLeft className="h-4 w-4" />
+          </Button>
+          {currentQuestion === questions.length - 1 ? (
             <Button onClick={() => handleNextQuestion()} disabled={!hasAnswered}>
-              {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
+              Finish
             </Button>
-          </div>
+          ) : (
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => handleNextQuestion()}
+              disabled={!hasAnswered}
+              className="rounded-full w-8 h-8 border"
+            >
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </div>
