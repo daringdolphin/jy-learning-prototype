@@ -10,16 +10,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
 
 const tutorialSteps = [
-  { path: "/tutorial/introduction", title: "Introduction" },
-  { path: "/tutorial/step-1", title: "When to Start" },
-  { path: "/tutorial/step-2", title: "Planning & Preparation" },
-  { path: "/tutorial/step-3", title: "Execution" },
-  { path: "/tutorial/step-4", title: "Approval Process" },
-  { path: "/tutorial/step-5", title: "After Approval" },
-  { path: "/tutorial/deviations", title: "Handling Deviations" },
-  { path: "/tutorial/quiz", title: "Knowledge Check" },
-  { path: "/tutorial/completion", title: "Completion" },
-  { path: "/tutorial/resources", title: "Resources" },
+  { path: "/finance-pr/introduction", title: "Introduction" },
+  { path: "/finance-pr/step-1", title: "When to Start" },
+  { path: "/finance-pr/step-2", title: "Planning & Preparation" },
+  { path: "/finance-pr/step-3", title: "Execution" },
+  { path: "/finance-pr/step-4", title: "Approval Process" },
+  { path: "/finance-pr/step-5", title: "After Approval" },
+  { path: "/finance-pr/deviations", title: "Handling Deviations" },
+  { path: "/finance-pr/quiz", title: "Knowledge Check" },
+  { path: "/finance-pr/completion", title: "Completion" },
+  { path: "/finance-pr/resources", title: "Resources" },
 ]
 
 export default function TutorialLayout({

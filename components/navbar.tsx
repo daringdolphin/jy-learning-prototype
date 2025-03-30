@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Home className="h-6 w-6 mr-2" />
-              <span className="font-semibold text-lg">Jia Ying Internal Resources Portal</span>
+              <span className="font-semibold text-lg">Internal Resources Portal</span>
             </Link>
           </div>
 
