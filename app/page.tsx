@@ -3,7 +3,7 @@
 import { ModuleCard } from "../components/ModuleCard"
 import { DepartmentTabs } from "../components/DepartmentTabs"
 import { useState } from "react"
-import { departments, modules, type Department } from "@/lib/modules"
+import { departments, modules } from "@/lib/modules"
 
 type DepartmentType = typeof departments[number]
 
