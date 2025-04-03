@@ -120,7 +120,7 @@ export default function Step2() {
                 <div className="border-b pb-2">
                   <h3 className="font-medium">Supplier Details</h3>
                   <ul className="list-disc pl-5 mt-1 text-sm text-slate-600">
-                    <li>Full Company Name (e.g., Elsie's Kitchen Catering Services Pte Ltd)</li>
+                    <li>Full Company Name (e.g., Elsie&apos;s Kitchen Catering Services Pte Ltd)</li>
                     <li>Complete Address</li>
                   </ul>
                 </div>
@@ -220,4 +220,3 @@ export default function Step2() {
     </div>
   )
 }
-

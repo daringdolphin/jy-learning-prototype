@@ -1,5 +1,4 @@
-import { CheckCircle, Clock, AlertCircle, Users, FileText } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { CheckCircle, Clock, AlertCircle, Users } from "lucide-react"
 
 export default function Introduction() {
   return (
