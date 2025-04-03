@@ -14,6 +14,7 @@ import {
   Send,
   Loader2,
   RefreshCw,
+  Plus,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { parseLLMOutput } from "@/utils/llmUtils";
@@ -95,12 +96,14 @@ export function ChatSheet({ moduleTitle, currentStep }: ChatSheetProps) {
                 </SheetTitle>
                 <Button
                   variant="ghost"
-                  size="icon"
+                  size="sm"
                   onClick={startNewChat}
                   title="New Chat"
                   disabled={isLoading}
+                  className="flex items-center gap-1"
                 >
-                  <RefreshCw className="h-4 w-4" />
+                  <Plus className="h-4 w-4" />
+                  <span>New Chat</span>
                 </Button>
               </div>
             </CardHeader>
