@@ -25,7 +25,7 @@ Finance Manager (processes payment)
 
 Procedure Details – 5 STEPS
 1. Start
-Procedure is triggered when goods/services are needed for budgeted or non-budgeted events. Initiate PR process X days before event.
+Procedure is triggered when goods/services are needed for budgeted or non-budgeted events. Initiate PR process 14 days before event.
 Not applicable for purchases under existing contracts.
 
 2. Time to Plan
