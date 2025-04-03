@@ -35,18 +35,34 @@ const questions: Question[] = [
   },
   {
     id: 4,
-    question: "Which of the following roles cannot be a PR requester?",
-    options: ["Administrative Staff", "Program Coordinator", "Centre Manager", "Volunteer"],
-    correctAnswer: 2,
-  },
-  {
-    id: 5,
     question: "For non-budgeted items more than $2000, who needs to approve the PR?",
     options: ["Only Executive Director", "4 Directors", "All Board Members", "Finance Manager"],
     correctAnswer: 2,
   },
   {
+    id: 5,
+    question: "How should GST be reflected in the PR form?",
+    options: [
+      "Ignore GST",
+      "Include GST but leave the rate blank",
+      "Specify if prices are inclusive/exclusive and set GST rate (9%)",
+      "Add GST only if vendor requests"
+    ],
+    correctAnswer: 2,
+  },
+  {
     id: 6,
+    question: "What is the correct company name to use in quotations?",
+    options: [
+      "Jia Ying Active Aging Centre",
+      "Jia Ying Community Services Society",
+      "Jia Ying Senior Hub",
+      "JY Community Services"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    id: 7,
     question: "What should you do after receiving approval for your PR?",
     options: [
       "Wait for the vendor to contact you",
@@ -57,13 +73,13 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    id: 7,
+    id: 8,
     question: "How many working days should the approval process by all parties be completed within?",
     options: ["3 days", "5 days", "7 days", "10 days"],
     correctAnswer: 1,
   },
   {
-    id: 8,
+    id: 9,
     question: "What should you do if you need to change details of a purchase after PR approval?",
     options: [
       "Make the changes directly on the approved PR",
@@ -72,17 +88,6 @@ const questions: Question[] = [
       "Proceed with the purchase anyway",
     ],
     correctAnswer: 2,
-  },
-  {
-    id: 9,
-    question: "Who should be CC'd when corresponding with vendors about orders?",
-    options: [
-      "Only the Centre Manager",
-      "Finance Officer and Executive Director",
-      "All Board Members",
-      "No one needs to be CC'd",
-    ],
-    correctAnswer: 1,
   },
   {
     id: 10,

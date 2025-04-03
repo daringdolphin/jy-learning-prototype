@@ -1,4 +1,5 @@
-import { CheckCircle, Clock, AlertCircle, Users } from "lucide-react"
+import { CheckCircle, Clock, AlertCircle, Users, FileText } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Introduction() {
   return (
@@ -16,15 +17,15 @@ export default function Introduction() {
         <div className="space-y-2">
           <div className="flex items-center">
             <Clock className="h-5 w-5 text-blue-500 mr-2" />
-            <span>Submit PR at least <strong>30 days</strong> before the event</span>
+            <span><strong>Start PR process:</strong> At least 14 days before event</span>
           </div>
           <div className="flex items-center">
             <Clock className="h-5 w-5 text-blue-500 mr-2" />
-            <span>All PRs and invoices due <strong>7 working days</strong> before event</span>
+            <span><strong>PRs and invoices due:</strong> 7 working days before event</span>
           </div>
           <div className="flex items-center">
             <Clock className="h-5 w-5 text-blue-500 mr-2" />
-            <span>Approval process must complete within <strong>5 working days</strong></span>
+            <span><strong>Approval completion:</strong> Within 5 working days</span>
           </div>
         </div>
       </div>
@@ -42,29 +43,36 @@ export default function Introduction() {
           <div className="flex items-start">
             <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
             <div>
-              <span className="font-medium">Step 2: Planning & Preparation</span>
+              <span className="font-medium">Step 2: Complete Pre-Event Form</span>
+              <p className="text-slate-600">Fill out the event details, budget, and planning information</p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+            <div>
+              <span className="font-medium">Step 3: Planning & Preparation</span>
               <p className="text-slate-600">Prepare PR form, event plan, and vendor quotations</p>
             </div>
           </div>
           <div className="flex items-start">
             <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
             <div>
-              <span className="font-medium">Step 3: Execution</span>
-              <p className="text-slate-600">Complete PR form and upload documents to Xodo</p>
+              <span className="font-medium">Step 4: Execute</span>
+              <p className="text-slate-600">Complete PR form with all required details and documentation</p>
             </div>
           </div>
           <div className="flex items-start">
             <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
             <div>
-              <span className="font-medium">Step 4: Approval Process</span>
-              <p className="text-slate-600">Obtain required approvals from management and board</p>
+              <span className="font-medium">Step 5: Approval via Xodo</span>
+              <p className="text-slate-600">Upload documents and route for required approvals</p>
             </div>
           </div>
           <div className="flex items-start">
             <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
             <div>
-              <span className="font-medium">Step 5: After Approval</span>
-              <p className="text-slate-600">Confirm orders, process payments, and maintain documentation</p>
+              <span className="font-medium">Step 6: Save & Exit</span>
+              <p className="text-slate-600">Complete the submission process with proper documentation</p>
             </div>
           </div>
         </div>
@@ -127,6 +135,10 @@ export default function Introduction() {
           <li className="flex items-start">
             <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5" />
             <span>All documentation must be properly maintained in both hard and soft copies</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5" />
+            <span>Pre-Event Form must be completed before PR form submission</span>
           </li>
         </ul>
       </div>

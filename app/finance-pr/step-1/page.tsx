@@ -16,10 +16,10 @@ export default function Step1() {
           <CardTitle className="flex items-center">
             <Clock className="mr-2 h-5 w-5" /> Timing Requirements
           </CardTitle>
-          <CardDescription>Submit PR 30 days before event</CardDescription>
+          <CardDescription>Submit PR at least 14 days before event</CardDescription>
         </CardHeader>
         <CardContent>
-          <p>Required for all goods and services purchases for budgeted or non-budgeted events.</p>
+          <p>Purchase Requisition is triggered when goods/services are needed for budgeted or non-budgeted events.</p>
         </CardContent>
       </Card>
 
