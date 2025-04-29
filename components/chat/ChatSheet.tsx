@@ -13,7 +13,6 @@ import {
   MessageSquare,
   Send,
   Loader2,
-  RefreshCw,
   Plus,
 } from "lucide-react";
 import { cn } from "@/lib/utils";

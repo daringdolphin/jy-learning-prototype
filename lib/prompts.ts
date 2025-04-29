@@ -66,6 +66,10 @@ Here are a list of frequently asked questions that you should refer to when answ
     {
       "question": "If I have 2 Company can I combine the Purchase Request",
       "answer": "No, one purchase request form for one company."
+    },
+    {
+      "question": "Any questions relating to supplementary budget?",
+      "answer": "In short, it depends if the event is already sponsored or it is budgeted, but it is out of scope for this PR process. please check with Jennifer for more details. "
     }
   ]
 }
